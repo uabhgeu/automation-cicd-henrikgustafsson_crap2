@@ -1,0 +1,8 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1593024401062,554,http://localhost:3000/api/login,200,OK,Thread Group 1-1,text,true,,388,290,1,1,http://localhost:3000/api/login,550,0,30
+1593024401653,2,http://localhost:3000/api/rooms,200,OK,Thread Group 1-1,text,true,,640,281,1,1,http://localhost:3000/api/rooms,2,0,0
+1593024401656,2,http://localhost:3000/api/clients,200,OK,Thread Group 1-1,text,true,,593,283,1,1,http://localhost:3000/api/clients,2,0,0
+1593024401658,2,http://localhost:3000/api/bills,200,OK,Thread Group 1-1,text,true,,395,281,1,1,http://localhost:3000/api/bills,2,0,0
+1593024401660,2,http://localhost:3000/api/reservations,200,OK,Thread Group 1-1,text,true,,439,288,1,1,http://localhost:3000/api/reservations,2,0,0
+1593024401662,2,http://localhost:3000/api/logout,200,OK,Thread Group 1-1,text,true,,316,288,1,1,http://localhost:3000/api/logout,2,0,0
+1593024400946,564,Test,200,"Number of samples in transaction : 6, number of failing samples : 0",Thread Group 1-1,,true,,2771,1711,1,1,null,560,153,30

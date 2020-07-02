@@ -1,0 +1,100 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-05-24T09:48:07.852Z",
+    "end": "2020-05-24T09:48:11.360Z",
+    "duration": 3508,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "10763cfe-85aa-416e-8716-71c4c54419d9",
+      "title": "",
+      "fullFile": "cypress/integration/visual-regression.spec.js",
+      "file": "cypress/integration/visual-regression.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "5946371a-6da6-4e46-b7e9-520dc1cebfac",
+          "title": "Regression test suite",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Perform valid login tc",
+              "fullTitle": "Regression test suite Perform valid login tc",
+              "timedOut": null,
+              "duration": 2235,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// Open the login page\ncy.visit('http://localhost:3000');\ncy.title().should('include', 'Testers Hotel');\ncy.contains('Login');\ncy.percySnapshot('login-page'); // Fill in the login information\ncy.get('div.field:nth-child(1) > input:nth-child(2)').type('tester01');\ncy.get('div.field:nth-child(2) > input:nth-child(2)').type('GteteqbQQgSr88SwNExUQv2ydb7xuf8c');\ncy.get('.btn').click(); // Open dash\ncy.contains('Tester Hotel Overview');\ncy.percySnapshot('dash-page'); // Clock logout\ncy.get('.user > .btn').click();\ncy.title().should('include', 'Testers Hotel');\ncy.contains('Login');",
+              "err": {},
+              "uuid": "dd7ee0e3-e751-45c7-ab72-843c7cffed32",
+              "parentUUID": "5946371a-6da6-4e46-b7e9-520dc1cebfac",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "dd7ee0e3-e751-45c7-ab72-843c7cffed32"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2235,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {},
+      "version": "5.1.0"
+    }
+  }
+}
